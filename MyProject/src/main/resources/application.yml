@@ -1,0 +1,15 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bit701?serverTimezone=Asia/Seoul
+    username: angel
+    password: 1234
+
+mybatis:
+  type-aliases-package: boot.study.dto,boot.study.mapper
+  mapper-locations:
+    - /mapper/**/*.xml
+
